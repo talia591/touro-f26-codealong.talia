@@ -1,0 +1,68 @@
+/* === RESET === */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === IMAGES === */
+/* STEP 3: keep images inside their containers */
+
+/* === BASE TYPE === */
+/* STEP 6: font stack and line-height on body */
+/* STEP 7: rem sizes for h1, h2, h3 */
+/* STEP 8: max-width on paragraphs */
+/* STEP 11: smooth scrolling on html (optional) */
+
+/* Space between text elements (the reset removed it) */
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 12px;
+}
+
+/* === HEADER === */
+.site-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #ccc;
+}
+
+.site-header nav a {
+  margin-left: 16px;
+}
+
+/* === PAGE GRID === */
+.page {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+/* === SECTIONS === */
+section {
+  border: 1px solid #ccc;
+  padding: 16px;
+}
+
+.hero,
+.how,
+.signup {
+  grid-column: 1 / -1;
+}
+
+.feature {
+  grid-column: span 4;
+}
+
+/* === FOOTER === */
+.site-footer {
+  padding: 16px;
+  border-top: 1px solid #ccc;
+}
